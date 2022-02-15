@@ -1,0 +1,1 @@
+Get-ChildItem C:\completed_packages | Where-Object LastWriteTime -lt (Get-Date).AddDays(-10) | Remove-Item -Recurse -Force
